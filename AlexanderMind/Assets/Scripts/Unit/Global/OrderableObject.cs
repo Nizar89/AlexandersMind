@@ -3,6 +3,8 @@ using System.Collections;
 
 public class OrderableObject : MonoBehaviour 
 {
+    public delegate void NewUnitSelected(); //When a new unit is selected, unselec last one. 
+
 	protected ListOrder orders = new ListOrder();
 
 
@@ -61,11 +63,11 @@ public class OrderableObject : MonoBehaviour
 				_isSelected = true;
 			}
 		}
-		else if (Input.touchCount > 0 && (Input.GetTouch(0).phase == TouchPhase.Ended || Input.GetTouch(0).phase == TouchPhase.Canceled)) //mouse button up
+		/*else if (Input.touchCount > 0 && (Input.GetTouch(0).phase == TouchPhase.Ended || Input.GetTouch(0).phase == TouchPhase.Canceled)) //mouse button up
 		{
 			_isSelected = false;
             orders.UnselecAllSquare();
-		}
+		}*/
 	}
 
 	void HandleListOrder()
