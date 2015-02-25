@@ -3,7 +3,9 @@ using System.Collections;
 
 public class SquareBehavior : MonoBehaviour 
 {
-	public enum StateSquare{None, Selected, UnitOnTop};
+	public enum StateSquare{None, Left, Right,Top,Bottom};
+
+
 	// Use this for initialization
 	void Start () 
 	{
@@ -22,11 +24,11 @@ public class SquareBehavior : MonoBehaviour
         {
             this.renderer.material.color = Color.white;
         }
-		else if (newState == StateSquare.Selected)
+		else if (newState == StateSquare.Left)
         {
             this.renderer.material.color = Color.yellow;
         }
-        else if (newState == StateSquare.UnitOnTop)
+        else if (newState == StateSquare.Right)
         {
             this.renderer.material.color = Color.red;
         }

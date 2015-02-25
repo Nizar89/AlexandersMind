@@ -54,9 +54,7 @@
     <Compile Include="Assets\Scripts\Floor\SquareBehavior.cs" />
     <Compile Include="Assets\Scripts\Global\GameManager.cs" />
     <Compile Include="Assets\Scripts\Global\ListTag.cs" />
-    <Compile Include="Assets\Scripts\Unit\Global\ListOrder.cs" />
     <Compile Include="Assets\Scripts\Unit\Global\OrderableObject.cs" />
-    <Compile Include="Assets\Scripts\Unit\Global\VisualOrder.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2013\UnityVS.CSharp.targets" />
 </Project>

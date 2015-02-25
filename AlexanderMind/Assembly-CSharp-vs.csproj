@@ -49,9 +49,7 @@
      <Compile Include="Assets\Scripts\Floor\SquareBehavior.cs" />
      <Compile Include="Assets\Scripts\Global\GameManager.cs" />
      <Compile Include="Assets\Scripts\Global\ListTag.cs" />
-     <Compile Include="Assets\Scripts\Unit\Global\ListOrder.cs" />
      <Compile Include="Assets\Scripts\Unit\Global\OrderableObject.cs" />
-     <Compile Include="Assets\Scripts\Unit\Global\VisualOrder.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/4.6.1/UnityEngine.UI.dll</HintPath>
  </Reference>
