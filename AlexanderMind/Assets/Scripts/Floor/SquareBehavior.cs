@@ -2,14 +2,19 @@
 using System.Collections;
 
 public class SquareBehavior : MonoBehaviour 
+    
 {
-	public enum StateSquare{None, Left, Right,Top,Bottom};
+    public Texture2D _textNormal;
+    public Texture2D _textLeft;
+    public Texture2D _textRight;
+    public Texture2D _textStop;
 
+    private Material _materialSquare;
 
 	// Use this for initialization
 	void Start () 
 	{
-	
+	    _materialSquare.SetTexture()
 	}
 	
 	// Update is called once per frame
@@ -18,19 +23,11 @@ public class SquareBehavior : MonoBehaviour
 	
 	}
 
-	public void ChangeState(StateSquare newState) //In case of performance trouble, add a check of actual state
+    public void ChangeState(ListOrder.ModifiedSquare.TypeModification newState) //In case of performance trouble, add a check of actual state
 	{
-        if (newState == StateSquare.None)
+        if (newState == ListOrder.ModifiedSquare.TypeModification.MoveLeft)
         {
-            this.renderer.material.color = Color.white;
-        }
-		else if (newState == StateSquare.Left)
-        {
-            this.renderer.material.color = Color.yellow;
-        }
-        else if (newState == StateSquare.Right)
-        {
-            this.renderer.material.color = Color.red;
+
         }
 	}
 }
